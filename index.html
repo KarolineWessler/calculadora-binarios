@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Binária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculators">
+        <div class="container">
+            <div class="header">
+                <h1> Calculadora de binários </h1>
+            </div>
+            <div class="container-content">
+                <input type="text" id="first-binary" placeholder="Primeiro número binário" maxlength="8"
+                    pattern="[01]{1,8}">
+                <select id="operation">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">x</option>
+                    <option value="divide">/</option>
+                </select>
+                <input type="text" id="second-binary" placeholder="Segundo número binário" maxlength="8"
+                    pattern="[01]{1,8}">
+
+                <button onclick="calculateBinary()">Calcular</button>
+                <div id="calculator-result" class="result"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h1> Conversor de decimal para binários </h1>
+            </div>
+            <div class="container-content">
+                <input type="text" id="decimal-input" placeholder="Insira um número decimal">
+                <button onclick="convertDecimalToBinary()">Converter para Binário</button>
+                <div id="binary-conversor-result" class="result"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h1> Conversor de binário para complemento de 2 </h1>
+            </div>
+            <div class="container-content">
+                <input type="text" id="binary-input" placeholder="Insira um número binário" maxlength="8"
+                    pattern="[01]{1,8}">
+                <button onclick="convertBinaryToComplementTwo()">Converter binário para complemento de 2</button>
+                <div id="complement-two-result" class="result"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h1> Conversor de binário para hexadecimal e octal</h1>
+            </div>
+            <div class="container-content">
+                <input type="text" id="binary-hex-input" placeholder="Insira um número binário" maxlength="8"
+                    pattern="[01]{1,8}">
+                <button onclick="convertBinaryToHexAndOctal()">Converter binário para hexadecimal e octal</button>
+                <div id="hex-octal-result" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

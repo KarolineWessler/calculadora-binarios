@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.calculators {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F4F4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 450px;
+    margin: 50px;
+}
+
+.container .header {
+    width: 100%;
+    height: 65px;
+    background-color: #D57E61;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    padding-top: 20px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.container .container-content {
+    height: calc(100% - 65px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container input {
+    width: 340px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 2px solid #cacaca;
+    padding: 10px;
+}
+
+.container input:focus-visible {
+    border-color: #D57E61;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.container select {
+    width: 48px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid #cacaca;
+    margin-bottom: 25px;
+}
+
+.container button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 355px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.container .result {
+    border: 2px solid #cacaca;
+    width: 355px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
