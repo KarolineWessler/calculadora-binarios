@@ -1,4 +1,4 @@
-# Trabalho Final desenvolvido para a disciplina de Tecnologias Computacionais e Sistemas Operacionais
+## Trabalho Final desenvolvido para a disciplina de Tecnologias Computacionais e Sistemas Operacionais
 
 Implementação de uma calculadora de números binários de até 8 bits com os seguintes critérios de avaliação:
 
