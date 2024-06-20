@@ -93,8 +93,10 @@ function convertBinaryToHexAndOctal() {
 
     if (isValidBinary(binaryInput)) {
         const num = binaryToDecimal(binaryInput);
-        const hex = num.toString(16).toUpperCase().padStart(2, '0');
-        const oct = num.toString(8).padStart(3, '0');
+        console.log(num);
+
+        const hex = num.toString(16);
+        const oct = num.toString(8);
 
         $('#hex-octal-result').empty();
         $('#hex-octal-result').append(`<p> Hexadecimal: ${hex}</p>`);
@@ -115,6 +117,7 @@ function binaryToDecimal(binary) {
 
 // Validador de binários
 function isValidBinary(binary) {
+    // Expressão regular para validar o binário
     return /^[01]{1,8}$/.test(binary);
 }
 
